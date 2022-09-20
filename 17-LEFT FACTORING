@@ -6,7 +6,7 @@ char b[6];
 printf("Enter the Grammar\n");
 gets(a);
 int n=strlen(a);
-printf("----->left recursion<--------\n");
+printf("left recursion\n");
 if(a[0]==a[3]){
     printf("%c->%c%c'\n",a[0],a[n-1],a[3]);
     int j=0;
@@ -22,7 +22,7 @@ if(a[0]==a[3]){
 else{
     printf("It does not have any Left recursion\n");
 }
-printf("--------->Left factoring<----------\n");
+printf("Left factoring\n");
 if(a[3]==a[6]||a[6]==a[9]){
         printf("%c->%c%c'|e\n",a[0],a[3],a[0]);
         printf("%c'->%c|%c",a[0],a[4],a[7]);
