@@ -24,7 +24,7 @@ printf("\n number of comments are = %d\n",com);
 } 
 int yywrap() 
 { 
-Dept. of CSE, MITS Page 30 
+
 return 1; 
 }
 
