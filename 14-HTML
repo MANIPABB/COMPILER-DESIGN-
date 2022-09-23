@@ -19,3 +19,15 @@ yylex();
 printf("\n Number of html tags:%d",tags);
 fclose(yyin);
 }
+
+
+
+//Input Source Program: (sample.html)
+
+<html> 
+<body> 
+Dept. of CSE, MITS Page 26 
+<h1>My First Heading</h1> 
+<p>My first paragraph.</p> 
+</body> 
+</html>
