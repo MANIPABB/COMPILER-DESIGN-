@@ -15,3 +15,17 @@ printf("Number of macros defined=%d\n",nmacro);
 printf("Number of header files included=%d\n",nheader);
 fclose(yyin);
 }
+
+
+//Input Source Program: (sample.c) 
+
+
+#define PI 3.14 
+#include<stdio.h> 
+#include<conio.h> 
+void main() 
+{ 
+ int a,b,c = 30; 
+Dept. of CSE, MITS Page 22 
+ printf("hello"); 
+ }
