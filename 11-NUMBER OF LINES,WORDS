@@ -17,3 +17,14 @@ printf("Number of words = %d\n", nword);
 printf("Number of lines = %d\n", nline); 
 fclose(yyin); 
 } 
+
+
+//Input Source Program: (sample.c)
+
+#include<stdio.h> 
+void main() 
+{ 
+ int a,b,c = 30; 
+ printf("hello"); 
+Dept. of CSE, MITS Page 20 
+ } 
