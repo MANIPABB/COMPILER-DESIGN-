@@ -1,21 +1,21 @@
 %{
-int nmacro,nheader;
+int nmacro, nheader;
 %}
+%%
 ^#define { nmacro++; }
 ^#include { nheader++; }
-.|\n {}
+.|\n { }
 %%
 int yywrap(void) {
 return 1;
 }
 int main(int argc, char *argv[]) {
-yyin =fopen(argv[1], "r");
+yyin = fopen(argv[1], "r");
 yylex();
-printf("Number of macros defined=%d\n",nmacro);
-printf("Number of header files included=%d\n",nheader);
+printf("Number of macros defined = %d\n", nmacro);
+printf("Number of header files included = %d\n", nheader);
 fclose(yyin);
-}
-
+} 
 
 //Input Source Program: (sample.c) 
 
@@ -26,6 +26,5 @@ fclose(yyin);
 void main() 
 { 
  int a,b,c = 30; 
-Dept. of CSE, MITS Page 22 
  printf("hello"); 
  }
